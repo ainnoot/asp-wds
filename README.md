@@ -1,3 +1,6 @@
+# Installing
+This project uses `poetry` as a dependency management system. Run `poetry install` to install dependencies, and `poetry shell` to activate a separate Python environmnet.
+
 # Inputs
 Running the scripts requires a set of geographical coordinates in GeoJSON format, storing `Point` geometry. This is an example of the required for the WDS nodes.
 

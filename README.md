@@ -35,7 +35,7 @@ Running the scripts requires a set of geographical coordinates in GeoJSON format
 Tanks, provided in a separate `geojson` file, must also provide a `elevation` property (average meters above local sea level, as an integer).
 
 # Scripts
-Check out `wds_reconstruction.sh` for the execution order of the different scripts. `compute_elevation.py` requires the environment variable `GOOGLE_MAPS_API_KEY` to be exported.
+Check out `wds_reconstruction.sh` for the execution order of the different scripts. `compute_elevation.py` requires the environment variable `GOOGLE_MAPS_API_KEY` to be exported. The encoding is available in the `wds_reconstruction.lp` file.
 
 ## `extract_road_network.py`
 ```

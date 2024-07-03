@@ -27,8 +27,8 @@ avoid_road_type(residential; living_street).
 :~ pipe(X,Y,K,_), highway(X,Y,K,Type), avoid_road_type(Type). [1@40,X,Y,K]
 
 :~ pump(X,Y,K,C), pipe(X,Y,K,_). [C@20,X,Y,K]
-:~ not pump(X,Y,K), pipe(X,Y,K,samedir),   height(X,HX), height(Y,HY), HY > HX. [1@20,X,Y,K,samedir]
-:~ not pump(X,Y,K), pipe(X,Y,K,inversion), height(X,HX), height(Y,HY), HX > HY. [1@20,X,Y,K,inversion]
+:~ not pump(X,Y,K,C), pipe(X,Y,K,samedir),   height(X,HX), height(Y,HY), HY > HX. [1@20,X,Y,K,samedir]
+:~ not pump(X,Y,K,C), pipe(X,Y,K,inversion), height(X,HX), height(Y,HY), HX > HY. [1@20,X,Y,K,inversion]
 
 % Number of pipes
 :~ pipe(X,Y,K,_). [1@10,X,Y,K]
@@ -43,3 +43,4 @@ avoid_road_type(residential; living_street).
 
 #show.
 #show pipe/4.
+#defined pump/4.

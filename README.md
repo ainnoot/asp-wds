@@ -1,8 +1,7 @@
 # Inputs
 Running the scripts requires a set of geographical coordinates in GeoJSON format, storing `Point` geometry. This is an example of the required for the WDS nodes.
 
-```
-# nodes.geojson
+```json
 {
   "type": "FeatureCollection",
   "features": [

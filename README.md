@@ -2,7 +2,7 @@
 This project uses `poetry` as a dependency management system. Run `poetry install` to install dependencies, and `poetry shell` to activate a separate Python environmnet.
 
 # Inputs
-Running the scripts requires a set of geographical coordinates in GeoJSON format, storing `Point` geometry. This is an example of the required for the WDS nodes.
+Running the scripts requires a set of geographical coordinates in GeoJSON format, storing `Point` geometry. This is an example of the required data schema for the WDS nodes.
 
 ```json
 {
@@ -32,7 +32,7 @@ Running the scripts requires a set of geographical coordinates in GeoJSON format
 }
 ```
 
-Tanks, provided in a separate `geojson` file, must also provide a `elevation` property (average meters above local sea level, as an integer).
+Tanks must be provided in a separate GeoJSON file matching the same schema but with an extra `elevation` property (the average meters above local sea level, as an integer).
 
 # Scripts
 Check out `wds_reconstruction.sh` for the execution order of the different scripts. `compute_elevation.py` requires the environment variable `GOOGLE_MAPS_API_KEY` to be exported. The encoding is available in the `wds_reconstruction.lp` file.
